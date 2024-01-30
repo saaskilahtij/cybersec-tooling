@@ -8,6 +8,7 @@ The parameters have been changed locally to match the correct conf so if ran on 
 
 Tool is ran with the following command:
   python3 argon_crack.py <wordlist> <argon2 hash>
+
 Example:
   python3 argon_crack.py wordlist.txt argon2_hash.txt
 
