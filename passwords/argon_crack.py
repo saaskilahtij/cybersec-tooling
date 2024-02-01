@@ -117,9 +117,9 @@ def main():
         password_conf = ph.hash(password, salt=salt)
         password_conf = parse_argon2_conf(password_conf)
         password_hash = password_conf["hash"]
-        hashToCompare = parsed_conf["hash"]
+        hash_to_compare = parsed_conf["hash"]
         print("Testing password: " + password)
-        if password_hash == hashToCompare:
+        if password_hash == hash_to_compare:
           print("Password cracked: " + password)
           with open("cracked.pot", "w") as f:
             f.write(password)
